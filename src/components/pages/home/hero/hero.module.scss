@@ -1,0 +1,21 @@
+.hero{
+    min-height: 90vh;
+    @include flex(column, center, center);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.85)), url("@/assets/home-3.jpg") no-repeat center center / cover;
+
+    &__stack{
+        width: min(50rem, 100%);
+        text-align: center;
+
+        >p{
+            width: 60%;
+            color: var(--mantine-color-white);
+        }
+
+        >h1{
+            font-size: 4rem;
+            text-transform: uppercase;
+            color: var(--mantine-color-white);
+        }
+    }
+}

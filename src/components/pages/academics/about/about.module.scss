@@ -1,0 +1,10 @@
+.about{
+    padding: 4rem 6rem 2rem 6rem;
+    @include flex(column, $gap:3rem);
+
+    &__bg{
+        height: 50vh;
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(@/assets/about.png) no-repeat center center / cover;
+        @include flex(column, center, center, 2rem);
+    }
+}

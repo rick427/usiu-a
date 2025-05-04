@@ -1,0 +1,4 @@
+.about{
+    padding: 4rem 6rem 2rem 6rem;
+    @include flex(column, $gap:3rem)
+}

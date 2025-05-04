@@ -1,0 +1,34 @@
+.acads{
+    padding: 2rem 6rem 4rem 6rem;
+    @include flex(column, $gap: 3rem);
+
+    &__paper{
+        padding: 2.5rem;
+        border-radius: 0;
+        background-color: var(--mantine-color-gray-0);
+        transition: all .6s ease;
+
+        &:hover{
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(@/assets/home-3.jpg) no-repeat center center / cover;
+            
+            h1{
+                color: white !important;
+            }
+            
+            p{
+                color: white !important;
+            }
+
+            button{
+                color: white;
+                border: 1px solid white;
+            }
+        }
+    }
+
+    &__card{
+        padding: 2.5rem;
+        border-radius: 0;
+        background-color: var(--mantine-color-primary-8);
+    }
+}

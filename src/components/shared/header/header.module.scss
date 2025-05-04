@@ -1,0 +1,38 @@
+.header{
+    @include flex(column);
+
+    &__nav{
+        padding: 0.5rem 6rem;
+        background-color: var(--mantine-color-primary-8);
+        @include flex(row, space-between, center);
+    }
+
+    &__div{
+        padding: 0 6rem;
+        @include flex(row, space-between, center)
+    }
+
+    &__logo{
+        width: 12rem;
+        height: 5rem;
+        object-fit: contain;
+        cursor: pointer;
+        background-color: var(--mantine-color-primary-0);
+    }
+
+    &__list{
+        list-style: none;
+        @include flex(row, $gap: 2rem);
+
+        >li{
+            font-size: 0.8rem;
+            font-weight: 400;
+            text-transform: uppercase;
+
+            > a{
+                color: var(--mantine-color-dark);
+                text-decoration: none;
+            }
+        }
+    }
+}

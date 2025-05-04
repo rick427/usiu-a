@@ -1,0 +1,11 @@
+.scholarship{
+    padding: 4rem 6rem;
+    min-height: 55vh;
+    @include flex(column, center, center, $gap:2rem);
+    background: url("@/assets/scholarship-bg.webp") no-repeat center center / cover fixed;
+
+    &__stack{
+        width: min(45rem, 100%);
+
+    }
+}

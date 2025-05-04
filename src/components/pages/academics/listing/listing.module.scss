@@ -1,0 +1,11 @@
+.listings{
+    padding: 2rem 6rem 6rem 6rem;
+    @include flex(column, $gap: 2rem);
+
+    &__paper{
+        padding: 2.5rem;
+        border-radius: 0;
+        background-color: var(--mantine-color-gray-0);
+        transition: all .6s ease;
+    }
+}

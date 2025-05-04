@@ -1,0 +1,9 @@
+.sf{
+    padding: 4rem 6rem;
+    @include flex(column, $gap:3rem);
+
+    &__form{
+        width: min(35rem, 100%);
+        margin: 0 auto;
+    }
+}

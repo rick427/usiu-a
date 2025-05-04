@@ -1,0 +1,4 @@
+.address{
+    padding: 2rem 6rem 4rem 6rem;
+    @include flex(column, $gap: 3rem);
+}

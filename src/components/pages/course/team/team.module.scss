@@ -1,0 +1,16 @@
+.team{
+    padding: 4rem 6rem;
+    @include flex(column, $gap: 3rem);
+
+    &__card{
+        padding: 2rem;
+        @include flex(column, $gap: 2rem);
+        background-color: var(--mantine-color-gray-0);
+
+        &__img{
+            width: 100%;
+            height: 22rem;
+            object-fit: cover;
+        }
+    }
+}

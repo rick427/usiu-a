@@ -1,0 +1,38 @@
+.reels{
+    @include flex(column);
+    overflow: hidden;
+
+    &__row{
+        padding: 1rem 6rem;
+        @include flex(row, $align:center, $gap: 2rem);
+        white-space: nowrap;
+        width: 200%;
+    }
+
+    &__top{
+        background-color: var(--mantine-color-secondary-1);
+        animation: scroll-left 20s linear infinite;
+    }
+
+    &__bottom{
+        background-color: var(--mantine-color-primary-2);
+        //animation: scroll-right 20s linear infinite;
+    }
+
+    &__item{
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0;
+    }
+}
+
+@keyframes scroll-left {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+  
+@keyframes scroll-right {
+    from { transform: translateX(0); }
+    to   { transform: translateX(50%); }
+}
